@@ -5,20 +5,19 @@ GridHub is a innovative platform that connects microgrid owners with property ow
 ## 🌟 Features
 
 ### For Property Owners (Locators)
-- List your properties with detailed energy-relevant specifications
+- Create a complete profile with photo and contact information
+- List your properties with detailed specifications and photos
 - Interactive map integration via Google Maps API
 - Receive and manage lease requests from microgrid owners
 - Track installed microgrids and available space
 - Multiple energy type support (solar, wind, combustion)
 
 ### For Microgrid Owners (Tenants)
-- Register and manage your microgrid specifications
+- Comprehensive profile management including profile picture
+- Register and manage your microgrids with photos and specifications
 - Search available spaces with detailed energy-relevant information
 - Submit lease requests with custom messages
-- Monitor microgrid performance through:
-  - Solar panel temperature
-  - Energy generation metrics
-  - Real-time performance tracking
+- Monitor microgrid performance through detailed reports
 
 ### Investment Features
 - Simple investment proposal submission system
@@ -33,46 +32,52 @@ The platform uses a relational database with the following structure:
 
 ```
 USUARIO (User)
-- usuario_id (PK)
-- email
-- senha
-- nome
-- telefone
+- usuario_id (PK)      NUMERIC(5)
+- email                VARCHAR(100)
+- senha                VARCHAR(100)
+- nome                 VARCHAR(100)
+- telefone             VARCHAR(30)
+- foto_perfil          VARCHAR(100)
 
 ESPACO (Space)
-- espaco_id (PK)
-- usuario_id (FK)
-- fonte_energia
-- orientacao_solar
-- media_solar
-- topografia
-- area_total
-- direcao_vento
-- velocidade_vento
+- espaco_id (PK)      NUMERIC(5)
+- usuario_id (FK)      NUMERIC(5)
+- endereco             VARCHAR(200)
+- nome_espaco          VARCHAR(100)
+- foto_espaco          VARCHAR(100)
+- fonte_energia        VARCHAR(20)
+- orientacao_solar     VARCHAR(30)
+- media_solar          VARCHAR(100)
+- topografia           VARCHAR(100)
+- area_total           VARCHAR(100)
+- direcao_vento        VARCHAR(100)
+- velocidade_vento     VARCHAR(100)
 
 MICROGRID
-- microgrid_id (PK)
-- usuario_id (FK)
-- espaco_id (FK)
-- radiacao_solar_necessaria
-- topografia_necessaria
-- area_total_necessaria
-- velocidade_vento_necessaria
-- fonte_energia
-- meta_financiamento
+- microgrid_id (PK)   NUMERIC(5)
+- usuario_id (FK)      NUMERIC(5)
+- espaco_id (FK)       NUMERIC(5)
+- nome_microgrid       VARCHAR(100)
+- foto_microgrid       VARCHAR(100)
+- radiacao_solar_necessaria    VARCHAR(100)
+- topografia_necessaria        VARCHAR(100)
+- area_total_necessaria        NUMERIC(20)
+- velocidade_vento_necessaria  VARCHAR(100)
+- fonte_energia                VARCHAR(20)
+- meta_financiamento          NUMERIC(20)
 
 INVESTIMENTO (Investment)
-- investimento_id (PK)
-- usuario_id (FK)
-- microgrid_id (FK)
-- descricao_proposta
+- investimento_id (PK) NUMERIC(5)
+- usuario_id (FK)      NUMERIC(5)
+- microgrid_id (FK)    NUMERIC(5)
+- descricao_proposta   VARCHAR(512)
 
 RELATORIO (Report)
-- relatorio_id (PK)
-- microgrid_id (FK)
-- energia_gerada
-- temp_painel_solar
-- lucro_gerado
+- relatorio_id (PK)    NUMERIC(5)
+- microgrid_id (FK)    NUMERIC(5)
+- energia_gerada       VARCHAR(50)
+- temp_painel_solar    VARCHAR(100)
+- lucro_gerado         VARCHAR(100)
 ```
 
 ## 🚀 Getting Started
