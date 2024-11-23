@@ -96,7 +96,18 @@ RELATORIO
 ```
 
 ## 🚀 Como Começar
-[Instruções de instalação serão adicionadas]
+### Backend
+- Clone o backend
+- Utilize uma IDE como o Intellij para abrir o projeto
+- Suba o docker-compose com o comando ```docker-compose up -d --build ```
+- Rode o projeto
+
+### Frontend
+- Clone o frontend
+- Acesse a pasta e rode o comando ```npm install```para instalar as dependências
+- Crie uma pasta com o nome .env e escreva ```NEXT_PUBLIC_BASE_API_URL=http://localhost:808```
+- Rode o comando ```npm run dev```
+- Agota acesse http://localhost:3000/
 
 ## 🤝 Como Contribuir
 Contribuições para o GridHub são bem-vindas! Por favor, leia nossas diretrizes de contribuição antes de enviar pull requests.
