@@ -1,37 +1,44 @@
 # GridHub
 
-GridHub is a innovative platform that connects microgrid owners with property owners, facilitating the deployment of sustainable energy solutions through a seamless space-leasing marketplace.
+## Itens de Entrega
+- Código fonte (frontend): https://github.com/Santlago/webgridhub
+- Código fonte (backend): https://github.com/Santlago/apigridhub
+- Deploy em nuvem (frontend): http://gridhub.vercel.app
+- Deploy em nuvem (backend): http://gridhub.railway.app
+- Vídeo pitch: https://youtu.be/tdruTbBAiNg
+- Vídeo demonstrativo do site: https://youtu.be/tdruTbBAiNg
 
-## 🌟 Features
+**O GridHub é uma plataforma inovadora que conecta proprietários de microgrids com donos de imóveis, facilitando a implementação de soluções de energia sustentável através de um marketplace intuitivo para locação de espaços.**
 
-### For Property Owners (Locators)
-- Create a complete profile with photo and contact information
-- List your properties with detailed specifications and photos
-- Interactive map integration via Google Maps API
-- Receive and manage lease requests from microgrid owners
-- Track installed microgrids and available space
-- Multiple energy type support (solar, wind, combustion)
+## ✨ Funcionalidades
 
-### For Microgrid Owners (Tenants)
-- Comprehensive profile management including profile picture
-- Register and manage your microgrids with photos and specifications
-- Search available spaces with detailed energy-relevant information
-- Submit lease requests with custom messages
-- Monitor microgrid performance through detailed reports
+### Para Proprietários de Imóveis (Locadores)
+- Criação de perfil completo com foto e informações de contato
+- Cadastro de propriedades com especificações detalhadas e fotos
+- Integração com mapa interativo via API do Google Maps
+- Recebimento e gestão de solicitações de locação dos proprietários de microgrids
+- Acompanhamento de microgrids instaladas e espaço disponível
+- Suporte a múltiplos tipos de energia (solar, eólica, combustão)
 
-### Investment Features
-- Simple investment proposal submission system
-- Direct connection between potential investors and microgrid owners
-- Streamlined communication process
+### Para Proprietários de Microgrids (Locatários)
+- Gerenciamento completo de perfil incluindo foto
+- Cadastro e gestão de suas microgrids com fotos e especificações
+- Busca de espaços disponíveis com informações detalhadas relevantes para energia
+- Envio de solicitações de locação com mensagens personalizadas
+- Monitoramento do desempenho das microgrids através de relatórios detalhados
 
-## 💫 Technical Overview
+### Funcionalidades de Investimento
+- Sistema simplificado de envio de propostas de investimento
+- Conexão direta entre potenciais investidores e proprietários de microgrids
+- Processo de comunicação otimizado
 
-### Database Schema
+## 🔧 Visão Técnica
 
-The platform uses a relational database with the following structure:
+### Esquema do Banco de Dados
+A plataforma utiliza um banco de dados relacional com a seguinte estrutura:
 
 ```
-USUARIO (User)
+USUARIO
 - usuario_id (PK)      NUMERIC(5)
 - email                VARCHAR(100)
 - senha                VARCHAR(100)
@@ -39,7 +46,7 @@ USUARIO (User)
 - telefone             VARCHAR(30)
 - foto_perfil          VARCHAR(100)
 
-ESPACO (Space)
+ESPACO
 - espaco_id (PK)      NUMERIC(5)
 - usuario_id (FK)      NUMERIC(5)
 - endereco             VARCHAR(200)
@@ -66,13 +73,13 @@ MICROGRID
 - fonte_energia                VARCHAR(20)
 - meta_financiamento          NUMERIC(20)
 
-INVESTIMENTO (Investment)
+INVESTIMENTO
 - investimento_id (PK) NUMERIC(5)
 - usuario_id (FK)      NUMERIC(5)
 - microgrid_id (FK)    NUMERIC(5)
 - descricao_proposta   VARCHAR(512)
 
-RELATORIO (Report)
+RELATORIO
 - relatorio_id (PK)    NUMERIC(5)
 - microgrid_id (FK)    NUMERIC(5)
 - energia_gerada       VARCHAR(50)
@@ -80,25 +87,20 @@ RELATORIO (Report)
 - lucro_gerado         VARCHAR(100)
 ```
 
-## 🚀 Getting Started
+## 🚀 Como Começar
+[Instruções de instalação serão adicionadas]
 
-[Installation instructions to be added]
+## 🤝 Como Contribuir
+Contribuições para o GridHub são bem-vindas! Por favor, leia nossas diretrizes de contribuição antes de enviar pull requests.
 
-## 🤝 Contributing
+## 📝 Licença
+[Informações sobre a licença serão adicionadas]
 
-We welcome contributions to GridHub! Please read our contributing guidelines before submitting pull requests.
+## 🔒 Segurança
+Todos os dados dos usuários e transações são tratados de forma segura. A plataforma concentra-se em conectar as partes mantendo transações financeiras sensíveis fora da plataforma.
 
-## 📝 License
-
-[License information to be added]
-
-## 🔒 Security
-
-All user data and transactions are handled securely. The platform focuses on connecting parties while keeping sensitive financial transactions off-platform.
-
-## 📞 Contact
-
-[Contact information to be added]
+## 📞 Contato
+[Informações de contato serão adicionadas]
 
 ---
-Built with ❤️ for a sustainable future
+Construído com ❤️ para um futuro sustentável
