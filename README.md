@@ -8,6 +8,14 @@
 - Vídeo pitch: https://youtu.be/tdruTbBAiNg
 - Vídeo demonstrativo do site: https://youtu.be/tdruTbBAiNg
 
+## Integrantes
+
+- Breno Lemes Santiago - RM: 552270
+- Felipe Guedes Gonçalves - RM: 550906
+- Luiz Felipe Soares de Sousa Lucena - RM: 551365
+- Nina Rebello Francisco - RM: 99509
+- Vitória Maria de Camargo - RM: 552344
+
 **O GridHub é uma plataforma inovadora que conecta proprietários de microgrids com donos de imóveis, facilitando a implementação de soluções de energia sustentável através de um marketplace intuitivo para locação de espaços.**
 
 ## ✨ Funcionalidades
