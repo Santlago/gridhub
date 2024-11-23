@@ -3,7 +3,7 @@
 ## Itens de Entrega
 - Código fonte (frontend): https://github.com/Santlago/webgridhub
 - Código fonte (backend): https://github.com/Santlago/apigridhub
-- Deploy em nuvem (frontend): http://gridhub.vercel.app
+- Deploy em nuvem (frontend): http://webgridhub.vercel.app
 - Deploy em nuvem (backend): http://gridhub.railway.app
 - Vídeo pitch: https://youtu.be/tdruTbBAiNg
 - Vídeo demonstrativo do site: https://youtu.be/tdruTbBAiNg
