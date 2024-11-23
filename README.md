@@ -6,7 +6,7 @@
 - Deploy em nuvem (frontend): http://webgridhub.vercel.app
 - Deploy em nuvem (backend): http://gridhub.railway.app
 - Vídeo pitch: https://youtu.be/tdruTbBAiNg
-- Vídeo demonstrativo do site: https://youtu.be/tdruTbBAiNg
+- Vídeo demonstrativo do site: https://www.youtube.com/watch?v=QlxdWQmlcLA
 
 ## Integrantes
 
